@@ -1,0 +1,10 @@
+/// blue
+field = { (ASCII_DIGIT | "." | "-")+ }
+/// red
+record = { field ~ ( splitter  ~ field)* }
+/// green
+splitter = { "," }
+/// black
+WHITESPACE = { " " }
+
+file = { SOI ~ (record ~ ("\r\n" | "\n"))* ~ EOI }
