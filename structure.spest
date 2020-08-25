@@ -23,7 +23,7 @@
            rule: EOI,
            span: Span { str: "", start: 24, end: 24 },
            inner: []
-        }
-   ]
-  }
+         }
+      ]
+   }
 ]
